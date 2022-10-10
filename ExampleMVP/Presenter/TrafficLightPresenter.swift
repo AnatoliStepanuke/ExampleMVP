@@ -8,9 +8,8 @@ final class TrafficLightPresenter {
     weak private var trafficLightViewDelegate: TrafficLightViewDelegate?
 
     // MARK: - Init
-    init(trafficLightService: TrafficLightService, trafficLightViewDelegate: TrafficLightViewDelegate?) {
+    init(trafficLightService: TrafficLightService) {
         self.trafficLightService = trafficLightService
-        self.trafficLightViewDelegate = trafficLightViewDelegate
     }
 
     // MARK: - Setups
