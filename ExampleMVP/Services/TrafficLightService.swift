@@ -1,7 +1,7 @@
 import Foundation
 
 final class TrafficLightService {
-    func getTrafficLight(colorName: (String), callBack: (TrafficLight?) -> Void) {
+    func getTrafficLight(colorName: String, callBack: (TrafficLight?) -> Void) {
         let trafficLight = [
             TrafficLight(colorName: "Red", description: "Stop"),
             TrafficLight(colorName: "Green", description: "Go"),

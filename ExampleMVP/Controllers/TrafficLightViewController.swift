@@ -26,7 +26,7 @@ final class TrafficLightViewController: UIViewController, TrafficLightViewDelega
         trafficLightPresenter.setViewDelegate(trafficLightViewDelegate: self)
     }
 
-    func displayTrafficLight(description: (String)) {
+    func displayTrafficLight(description: String) {
         descriptionLabel.text = description
     }
 }
