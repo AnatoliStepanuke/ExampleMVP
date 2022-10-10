@@ -13,6 +13,8 @@
 		DCE9F60428F45C980080B31A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE9F60228F45C980080B31A /* Main.storyboard */; };
 		DCE9F60628F45C9A0080B31A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE9F60528F45C9A0080B31A /* Assets.xcassets */; };
 		DCE9F60928F45C9A0080B31A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE9F60728F45C9A0080B31A /* LaunchScreen.storyboard */; };
+		DCE9F61728F479340080B31A /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9F61628F479340080B31A /* TrafficLight.swift */; };
+		DCE9F61A28F47ACE0080B31A /* TrafficLightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9F61928F47ACE0080B31A /* TrafficLightService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DCE9F60528F45C9A0080B31A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCE9F60828F45C9A0080B31A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCE9F60A28F45C9A0080B31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE9F61628F479340080B31A /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
+		DCE9F61928F47ACE0080B31A /* TrafficLightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				DCE9F61128F476BF0080B31A /* Controllers */,
 				DCE9F61028F476B20080B31A /* Delegate */,
 				DCE9F60A28F45C9A0080B31A /* Info.plist */,
+				DCE9F61528F479140080B31A /* Models */,
+				DCE9F61828F47AB50080B31A /* Services */,
 				DCE9F61228F476C90080B31A /* Storyboard */,
 			);
 			path = ExampleMVP;
@@ -97,6 +103,22 @@
 				DCE9F60528F45C9A0080B31A /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		DCE9F61528F479140080B31A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCE9F61628F479340080B31A /* TrafficLight.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCE9F61828F47AB50080B31A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DCE9F61928F47ACE0080B31A /* TrafficLightService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,7 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCE9F61728F479340080B31A /* TrafficLight.swift in Sources */,
 				DCE9F60128F45C980080B31A /* ViewController.swift in Sources */,
+				DCE9F61A28F47ACE0080B31A /* TrafficLightService.swift in Sources */,
 				DCE9F5FD28F45C980080B31A /* AppDelegate.swift in Sources */,
 				DCE9F5FF28F45C980080B31A /* SceneDelegate.swift in Sources */,
 			);
