@@ -16,7 +16,6 @@
 		DCE9F60928F45C9A0080B31A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE9F60728F45C9A0080B31A /* LaunchScreen.storyboard */; };
 		DCE9F61728F479340080B31A /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9F61628F479340080B31A /* TrafficLight.swift */; };
 		DCE9F61A28F47ACE0080B31A /* TrafficLightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9F61928F47ACE0080B31A /* TrafficLightService.swift */; };
-		DCE9F61D28F47FEB0080B31A /* TrafficLightViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9F61C28F47FEB0080B31A /* TrafficLightViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		DCE9F60A28F45C9A0080B31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCE9F61628F479340080B31A /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
 		DCE9F61928F47ACE0080B31A /* TrafficLightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightService.swift; sourceTree = "<group>"; };
-		DCE9F61C28F47FEB0080B31A /* TrafficLightViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +68,6 @@
 				DCE9F61028F476B20080B31A /* Delegate */,
 				DCE9F60A28F45C9A0080B31A /* Info.plist */,
 				DCE9F61528F479140080B31A /* Models */,
-				DCE9F61B28F47FC50080B31A /* Protocols */,
 				DCE9F61828F47AB50080B31A /* Services */,
 				DCE9F61228F476C90080B31A /* Storyboard */,
 			);
@@ -125,14 +122,6 @@
 				DCE9F61928F47ACE0080B31A /* TrafficLightService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		DCE9F61B28F47FC50080B31A /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				DCE9F61C28F47FEB0080B31A /* TrafficLightViewDelegate.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		DCE9F61E28F482760080B31A /* Presenter */ = {
@@ -240,7 +229,6 @@
 				DCE9F60128F45C980080B31A /* TrafficLightViewController.swift in Sources */,
 				DCE9F61A28F47ACE0080B31A /* TrafficLightService.swift in Sources */,
 				DCE9F5FD28F45C980080B31A /* AppDelegate.swift in Sources */,
-				DCE9F61D28F47FEB0080B31A /* TrafficLightViewDelegate.swift in Sources */,
 				DCE9F5FF28F45C980080B31A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

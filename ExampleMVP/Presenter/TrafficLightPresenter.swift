@@ -1,5 +1,9 @@
 import Foundation
 
+protocol TrafficLightViewDelegate: NSObjectProtocol {
+    func displayTrafficLight(description: (String))
+}
+
 final class TrafficLightPresenter {
     // MARK: - Constants
     private let trafficLightService: TrafficLightService
