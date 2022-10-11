@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC1ECA9E28F482D800953FF2 /* TrafficLightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1ECA9D28F482D800953FF2 /* TrafficLightPresenter.swift */; };
 		DCE9F5FD28F45C980080B31A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9F5FC28F45C980080B31A /* AppDelegate.swift */; };
 		DCE9F5FF28F45C980080B31A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9F5FE28F45C980080B31A /* SceneDelegate.swift */; };
-		DCE9F60128F45C980080B31A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9F60028F45C980080B31A /* ViewController.swift */; };
+		DCE9F60128F45C980080B31A /* TrafficLightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9F60028F45C980080B31A /* TrafficLightViewController.swift */; };
 		DCE9F60428F45C980080B31A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE9F60228F45C980080B31A /* Main.storyboard */; };
 		DCE9F60628F45C9A0080B31A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE9F60528F45C9A0080B31A /* Assets.xcassets */; };
 		DCE9F60928F45C9A0080B31A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCE9F60728F45C9A0080B31A /* LaunchScreen.storyboard */; };
+		DCE9F61728F479340080B31A /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9F61628F479340080B31A /* TrafficLight.swift */; };
+		DCE9F61A28F47ACE0080B31A /* TrafficLightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9F61928F47ACE0080B31A /* TrafficLightService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC1ECA9D28F482D800953FF2 /* TrafficLightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightPresenter.swift; sourceTree = "<group>"; };
 		DCE9F5F928F45C980080B31A /* ExampleMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCE9F5FC28F45C980080B31A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCE9F5FE28F45C980080B31A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCE9F60028F45C980080B31A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DCE9F60028F45C980080B31A /* TrafficLightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightViewController.swift; sourceTree = "<group>"; };
 		DCE9F60328F45C980080B31A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCE9F60528F45C9A0080B31A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCE9F60828F45C9A0080B31A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCE9F60A28F45C9A0080B31A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE9F61628F479340080B31A /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
+		DCE9F61928F47ACE0080B31A /* TrafficLightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,74 @@
 		DCE9F5FB28F45C980080B31A /* ExampleMVP */ = {
 			isa = PBXGroup;
 			children = (
-				DCE9F5FC28F45C980080B31A /* AppDelegate.swift */,
-				DCE9F5FE28F45C980080B31A /* SceneDelegate.swift */,
-				DCE9F60028F45C980080B31A /* ViewController.swift */,
-				DCE9F60228F45C980080B31A /* Main.storyboard */,
-				DCE9F60528F45C9A0080B31A /* Assets.xcassets */,
-				DCE9F60728F45C9A0080B31A /* LaunchScreen.storyboard */,
+				DCE9F61E28F482760080B31A /* Presenter */,
+				DCE9F61328F476D60080B31A /* Assets */,
+				DCE9F61128F476BF0080B31A /* Controllers */,
+				DCE9F61028F476B20080B31A /* Delegate */,
 				DCE9F60A28F45C9A0080B31A /* Info.plist */,
+				DCE9F61528F479140080B31A /* Models */,
+				DCE9F61828F47AB50080B31A /* Services */,
+				DCE9F61228F476C90080B31A /* Storyboard */,
 			);
 			path = ExampleMVP;
+			sourceTree = "<group>";
+		};
+		DCE9F61028F476B20080B31A /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				DCE9F5FC28F45C980080B31A /* AppDelegate.swift */,
+				DCE9F5FE28F45C980080B31A /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		DCE9F61128F476BF0080B31A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DCE9F60028F45C980080B31A /* TrafficLightViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DCE9F61228F476C90080B31A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DCE9F60228F45C980080B31A /* Main.storyboard */,
+				DCE9F60728F45C9A0080B31A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DCE9F61328F476D60080B31A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DCE9F60528F45C9A0080B31A /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DCE9F61528F479140080B31A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DCE9F61628F479340080B31A /* TrafficLight.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DCE9F61828F47AB50080B31A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DCE9F61928F47ACE0080B31A /* TrafficLightService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DCE9F61E28F482760080B31A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DC1ECA9D28F482D800953FF2 /* TrafficLightPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +142,7 @@
 				DCE9F5F528F45C980080B31A /* Sources */,
 				DCE9F5F628F45C980080B31A /* Frameworks */,
 				DCE9F5F728F45C980080B31A /* Resources */,
+				DCE9F61428F477C80080B31A /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,12 +199,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DCE9F61428F477C80080B31A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DCE9F5F528F45C980080B31A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCE9F60128F45C980080B31A /* ViewController.swift in Sources */,
+				DC1ECA9E28F482D800953FF2 /* TrafficLightPresenter.swift in Sources */,
+				DCE9F61728F479340080B31A /* TrafficLight.swift in Sources */,
+				DCE9F60128F45C980080B31A /* TrafficLightViewController.swift in Sources */,
+				DCE9F61A28F47ACE0080B31A /* TrafficLightService.swift in Sources */,
 				DCE9F5FD28F45C980080B31A /* AppDelegate.swift in Sources */,
 				DCE9F5FF28F45C980080B31A /* SceneDelegate.swift in Sources */,
 			);
